@@ -1,6 +1,6 @@
-package com.empresa.quiz.repository;
+package com.empresa.quiz_empresa.repository;
 
-import com.empresa.quiz.model.Empleado;
+import com.empresa.quiz_empresa.model.Empleado;
 import org.springframework.data.jpa.repository.EntityGraph;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.List;

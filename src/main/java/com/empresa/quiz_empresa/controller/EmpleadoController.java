@@ -1,9 +1,10 @@
-package com.empresa.quiz.controller;
+package com.empresa.quiz_empresa.controller;
 
-import com.empresa.quiz.model.Empleado;
-import com.empresa.quiz.model.Puesto;
-import com.empresa.quiz.repository.DepartamentoRepository;
-import com.empresa.quiz.service.EmpleadoService;
+import com.empresa.quiz_empresa.model.Empleado;
+import com.empresa.quiz_empresa.model.Puesto;
+import com.empresa.quiz_empresa.repository.DepartamentoRepository;
+import com.empresa.quiz_empresa.service.EmpleadoService;
+
 import jakarta.validation.Valid;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -55,7 +56,6 @@ public class EmpleadoController {
     public String guardar(@Valid @ModelAttribute("empleado") Empleado empleado,
                           BindingResult errores, Model model, RedirectAttributes flash) {
         if (errores.hasErrors()) {
-            // Se vuelven a cargar los selects para que no queden vacíos
             model.addAttribute("departamentos", deptoRepo.findAll());
             model.addAttribute("puestos", Puesto.values());
             return "empleados/formulario";
@@ -65,7 +65,6 @@ public class EmpleadoController {
             flash.addFlashAttribute("mensaje", "Empleado creado correctamente");
             return "redirect:/empleados";
         } catch (IllegalArgumentException e) {
-            
             model.addAttribute("error", e.getMessage());
             model.addAttribute("departamentos", deptoRepo.findAll());
             model.addAttribute("puestos", Puesto.values());

@@ -1,6 +1,6 @@
-package com.empresa.quiz.repository;
+package com.empresa.quiz_empresa.repository;
 
-import com.empresa.quiz.model.Usuario;
+import com.empresa.quiz_empresa.model.Usuario;
 import org.springframework.data.jpa.repository.JpaRepository;
 import java.util.Optional;
 

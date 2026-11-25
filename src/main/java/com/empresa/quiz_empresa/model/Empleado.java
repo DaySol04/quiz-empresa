@@ -1,4 +1,4 @@
-package com.empresa.quiz.model;
+package com.empresa.quiz_empresa.model;
 
 import jakarta.persistence.*;
 import jakarta.validation.constraints.*;

@@ -1,8 +1,8 @@
-package com.empresa.quiz.service;
+package com.empresa.quiz_empresa.service;
 
-import com.empresa.quiz.model.Empleado;
-import com.empresa.quiz.repository.DepartamentoRepository;
-import com.empresa.quiz.repository.EmpleadoRepository;
+import com.empresa.quiz_empresa.repository.DepartamentoRepository;
+import com.empresa.quiz_empresa.model.Empleado;
+import com.empresa.quiz_empresa.repository.EmpleadoRepository;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 

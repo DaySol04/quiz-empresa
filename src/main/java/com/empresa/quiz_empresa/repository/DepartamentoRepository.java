@@ -1,6 +1,6 @@
-package com.empresa.quiz.repository;
+package com.empresa.quiz_empresa.repository;
 
-import com.empresa.quiz.model.Departamento;
+import com.empresa.quiz_empresa.model.Departamento;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
